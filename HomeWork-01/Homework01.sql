@@ -1,7 +1,7 @@
 create database Homework01
 use Homework01
 
---Tabele Students--
+
 create table Students
 (
 	Id int identity(1,1),
@@ -13,10 +13,10 @@ create table Students
 	NationalIdNumber char(15),
 	StudentCardNumber char(10),
 )
---Tabele Students--
 
 
---Table Teacher--
+
+
 create table Teacher
 (
 	Id int identity(1,1),
@@ -26,9 +26,7 @@ create table Teacher
 	AcademicRank nvarchar(100) not null,
 	HireDate datetime2,
 )
---Table Teacher--
 
---Table Grades--
 create table Grades
 (
 	Id int identity(1,1),
@@ -40,9 +38,7 @@ create table Grades
 	CreatedDate datetime2
 	
 )
---Table Grades--
 
---Table Courses--
 create table Courses
 (
 	Id int identity(1,1),
@@ -51,9 +47,7 @@ create table Courses
 	AcademicYear int,
 	Semester varchar(20)
 )
---Table Courses--
 
---Table GradeDetails--
 create table GradeDetails
 (
 	Id int identity(1,1),
@@ -63,9 +57,7 @@ create table GradeDetails
 	AchievementMax decimal(18,2),
 	AchievementDate datetime2
 )
---Table GradeDetails--
 
---Table AchievementTypes--
 create table AchievementTypes
 (
 Id int identity(1,1),
@@ -73,7 +65,7 @@ Id int identity(1,1),
 [Description] nvarchar(MAX),
 ParticipationRate decimal(18,2)
 )
---Table AchievementTypes--
+-
 
 
 Alter table Student
